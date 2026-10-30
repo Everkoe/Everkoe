@@ -16,11 +16,11 @@ Me gusta que las reglas vivan en la base de datos y que cada cambio se pruebe an
 ### Proyectos
 
 <p>
-<img src="assets/fila-kapital.svg" width="100%" alt="Kapital Routing: turnos y flota para transporte de personal (en producción, privado)" />
-<a href="https://woodland-peru-web-wasd-9268.vercel.app/"><img src="assets/fila-woodland.svg" width="100%" alt="Woodland Perú: web comercial y panel para una empresa de teca (hackatón, equipo WASD)" /></a>
-<a href="https://nexo-ubicaciones.vercel.app"><img src="assets/fila-nexo.svg" width="100%" alt="Nexo Ubicaciones: registro de domicilios con ubicación real (prototipo)" /></a>
-<a href="https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix"><img src="assets/fila-rutafix.svg" width="100%" alt="RutaFix: rutas de intervención vial con K-Means y TSP (curso, equipo)" /></a>
-<a href="https://facturasnap-web.vercel.app"><img src="assets/fila-facturasnap.svg" width="100%" alt="FacturaSnap: cálculo de IGV para facturas SUNAT (en línea)" /></a>
+<img src="assets/proyecto-kapital.svg" width="100%" alt="Kapital Routing: turnos y flota para transporte de personal (en producción)" />
+<a href="https://woodland-peru-web-wasd-9268.vercel.app/"><img src="assets/proyecto-woodland.svg" width="100%" alt="Woodland Perú: web comercial para una empresa de teca (hackatón)" /></a>
+<a href="https://nexo-ubicaciones.vercel.app"><img src="assets/proyecto-nexo.svg" width="100%" alt="Nexo Ubicaciones: registro de domicilios con ubicación real (prototipo)" /></a>
+<a href="https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix"><img src="assets/proyecto-rutafix.svg" width="100%" alt="RutaFix: rutas de intervención vial con K-Means (curso)" /></a>
+<a href="https://facturasnap-web.vercel.app"><img src="assets/proyecto-facturasnap.svg" width="100%" alt="FacturaSnap: cálculo de IGV para facturas SUNAT (en línea)" /></a>
 </p>
 
 ### Stack
