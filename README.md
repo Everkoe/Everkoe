@@ -31,7 +31,7 @@ Me gusta que las reglas vivan en la base de datos y que cada cambio se pruebe an
 
 ### Actividad
 
-<img src="assets/actividad.svg" alt="Contribuciones del último año" width="100%" />
+<img src="assets/actividad-semanas.svg" alt="Contribuciones del último año" width="100%" />
 
 <br/>
 

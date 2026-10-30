@@ -1,7 +1,7 @@
 """Genera assets/actividad.svg con las contribuciones del último año.
 
 Lee el calendario de contribuciones por GraphQL con GITHUB_TOKEN y dibuja
-barras semanales con el mismo estilo de la cabecera del perfil.
+barras semanales con el mismo estilo de las tarjetas de proyectos.
 """
 import json
 import os
@@ -10,7 +10,7 @@ import urllib.request
 from datetime import date
 
 USUARIO = os.environ.get("USUARIO", "Everkoe")
-SALIDA = os.environ.get("SALIDA", "assets/actividad.svg")
+SALIDA = os.environ.get("SALIDA", "assets/actividad-semanas.svg")
 MESES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 
 CONSULTA = """
@@ -66,40 +66,41 @@ def svg(calendario):
     vigente, mejor = rachas(dias)
     maximo = max(totales) or 1
 
-    x0, ancho_util, base, alto_max = 330, 540, 150, 104
+    x0, ancho_util, base, alto_max = 316, 548, 128, 88
     paso = ancho_util / len(semanas)
     barras, etiquetas, mes_previo = [], [], None
     for i, (semana, total) in enumerate(zip(semanas, totales)):
         x = x0 + i * paso
-        alto = max(3, round(total / maximo * alto_max)) if total else 3
-        opacidad = 0.18 if not total else 0.45 + 0.55 * total / maximo
+        alto = max(4, round(total / maximo * alto_max)) if total else 4
+        clase = "b" if total else "v"
+        opacidad = 1 if not total else 0.35 + 0.65 * total / maximo
         barras.append(
-            f'<rect x="{x:.1f}" y="{base - alto}" width="{paso - 3:.1f}" height="{alto}" rx="2" '
-            f'fill="#4ADE80" fill-opacity="{opacidad:.2f}">'
-            f'<animate attributeName="height" from="0" to="{alto}" dur=".8s" begin="{i * 0.015:.2f}s" fill="freeze"/>'
-            f'<animate attributeName="y" from="{base}" to="{base - alto}" dur=".8s" begin="{i * 0.015:.2f}s" fill="freeze"/>'
+            f'<rect class="{clase}" x="{x:.1f}" y="{base - alto}" width="{paso - 3.5:.1f}" height="{alto}" rx="3" '
+            f'fill-opacity="{opacidad:.2f}">'
+            f'<animate attributeName="height" from="0" to="{alto}" dur=".7s" begin="{i * 0.012:.2f}s" fill="freeze"/>'
+            f'<animate attributeName="y" from="{base}" to="{base - alto}" dur=".7s" begin="{i * 0.012:.2f}s" fill="freeze"/>'
             "</rect>"
         )
         mes = date.fromisoformat(semana["contributionDays"][0]["date"]).month
         if mes != mes_previo and i < len(semanas) - 2:
-            etiquetas.append(
-                f'<text x="{x:.1f}" y="172" font-size="10" fill="#86EFAC" fill-opacity=".6" class="mono">{MESES[mes - 1]}</text>'
-            )
+            etiquetas.append(f'<text class="d" x="{x:.1f}" y="150" font-size="11">{MESES[mes - 1]}</text>')
             mes_previo = mes
 
     total = calendario["totalContributions"]
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-label="{total} contribuciones en el último año">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0B1120"/><stop offset=".45" stop-color="#0F2A20"/><stop offset="1" stop-color="#14532D"/>
-    </linearGradient>
-  </defs>
-  <style>text{{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}}.mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}</style>
-  <rect width="900" height="200" rx="14" fill="url(#bg)"/>
-  <text x="40" y="92" font-size="56" font-weight="700" fill="#F0FDF4">{total}</text>
-  <text x="42" y="118" font-size="14" fill="#BBF7D0">contribuciones en el último año</text>
-  <text x="42" y="152" font-size="12" fill="#86EFAC" class="mono">racha actual {vigente} d · mejor {mejor} d</text>
-  <line x1="310" y1="46" x2="310" y2="160" stroke="#22C55E" stroke-opacity=".25"/>
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="900" height="172" viewBox="0 0 900 172" role="img" aria-label="{total} contribuciones en el último año">
+  <style>
+    text{{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}}
+    .bg{{fill:#ECFDF3}}.n{{fill:#14532D}}.d{{fill:#59636E}}.st{{fill:#166534}}.p{{fill:#DCFCE7}}.b{{fill:#16A34A}}.v{{fill:#16A34A;fill-opacity:.12}}.l{{stroke:#16A34A;stroke-opacity:.18}}
+    @media (prefers-color-scheme:dark){{.bg{{fill:#0F2A1C}}.n{{fill:#F0FDF4}}.d{{fill:#9198A1}}.st{{fill:#BBF7D0}}.p{{fill:#14532D}}.b{{fill:#4ADE80}}.v{{fill:#4ADE80;fill-opacity:.12}}.l{{stroke:#4ADE80;stroke-opacity:.2}}}}
+  </style>
+  <rect class="bg" width="900" height="172" rx="18"/>
+  <text class="n" x="36" y="82" font-size="52" font-weight="600" letter-spacing="-1">{total}</text>
+  <text class="d" x="38" y="108" font-size="14">contribuciones en el último año</text>
+  <rect class="p" x="36" y="122" width="112" height="26" rx="13"/>
+  <text class="st" x="92" y="139.5" font-size="12.5" font-weight="500" text-anchor="middle">racha {vigente} días</text>
+  <rect class="p" x="156" y="122" width="112" height="26" rx="13"/>
+  <text class="st" x="212" y="139.5" font-size="12.5" font-weight="500" text-anchor="middle">mejor {mejor} días</text>
+  <line class="l" x1="{x0}" y1="{base + 0.5}" x2="{x0 + ancho_util - 3.5}" y2="{base + 0.5}"/>
   {''.join(barras)}
   {''.join(etiquetas)}
 </svg>
