@@ -10,9 +10,13 @@
 
 <br/>
 
-Soy Anyelo, estudiante de la UPC. Hago aplicaciones web de punta a punta: la interfaz en React, la API en Python y los datos en PostgreSQL.
+### Sobre mí
 
-Mi proyecto principal es **Kapital Routing**, la herramienta con la que una empresa de transporte de personal programa cada noche sus turnos, rutas y flota. Me gustan los problemas que se notan fuera de la pantalla: un turno que cruza la medianoche o una unidad que no puede estar en dos lugares a la vez.
+- 🎓 Estudiante en la **UPC**, desde Lima
+- 💻 Desarrollo web full stack con **React**, **Python** y **PostgreSQL**
+- 🧩 Me gustan los problemas reales: horarios, rutas y datos que tienen que cuadrar
+- 🧪 Pruebo cada cambio antes de publicarlo
+- 🤝 Disfruto trabajar en equipo, en hackatones y en clase
 
 ### Proyectos
 
