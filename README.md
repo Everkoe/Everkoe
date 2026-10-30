@@ -4,59 +4,28 @@ Hago software para operaciones: programación de turnos, rutas, flota y registro
 Me interesa que las reglas del negocio vivan en un solo lugar, que se puedan probar y que la
 herramienta la use gente de verdad todos los días.
 
-Trabajo solo en algunos proyectos y en equipo en otros (UPC y hackatones).
-Abajo está lo más reciente.
-
 ## Proyectos
 
-<table>
-<tr>
-<td width="50%"><img src="assets/card-kapital.svg" alt="Kapital Routing: programación de turnos y flota" width="100%" /></td>
-<td width="50%"><a href="https://nexo-ubicaciones.vercel.app"><img src="assets/card-nexo.svg" alt="Nexo Ubicaciones: registro móvil de domicilios" width="100%" /></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix"><img src="assets/card-rutafix.svg" alt="RutaFix: rutas de intervención vial" width="100%" /></a></td>
-<td width="50%"><a href="https://github.com/W-A-S-D-2-0/woodlandsperu-main"><img src="assets/card-woodland.svg" alt="Woodland Perú: plataforma comercial" width="100%" /></a></td>
-</tr>
-</table>
+| Proyecto | Qué es | Stack | Estado |
+|---|---|---|---|
+| **Kapital Routing** | Programación de turnos y flota para transporte de personal. Crea el turno desde la semanal del cliente, valida reservas de unidad, conductor y horario en la base de datos, guarda historial con deshacer y rehacer, importa y exporta Excel y dibuja zonas de cobertura en mapa. | React, FastAPI, PostgreSQL | En producción · privado |
+| **Nexo Ubicaciones** | Registro móvil de domicilios con captura real de ubicación (precisión, hora, CSV) y panel de administración. | JavaScript | [Demo](https://nexo-ubicaciones.vercel.app) · privado |
+| **[RutaFix](https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix)** | Rutas de intervención vial: agrupa puntos con K-Means y calcula la ruta con fuerza bruta, backtracking, vecino más cercano y MST. Arquitectura DDD. | Python, FastAPI, React, Leaflet | Curso · equipo |
+| **[Woodland Perú](https://github.com/W-A-S-D-2-0/woodlandsperu-main)** | Web comercial y panel de inventario, cotizaciones y pedidos para una MIPYME, hecha en una hackatón. | React, Hono, Supabase | En desarrollo · equipo WASD |
+| **[FacturaSnap](https://facturasnap-web.vercel.app)** | Calculadora de IGV y precio unitario para facturas con formato SUNAT. | React, TypeScript | [Sitio](https://facturasnap-web.vercel.app) |
+| **[WASD Connect](https://github.com/W-A-S-D-2-0/wasd-connect)** | Mapa y reservas para pymes de Lima. | Next.js, Drizzle, Postgres | Equipo WASD |
+| **[Qlic](https://github.com/wasd25/qlic-frontend)** · **[OsitoPolar](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend)** | Aplicaciones web de los cursos, en equipo. | Vue, C# | Curso · equipo |
 
-**Kapital Routing** (privado). Plataforma en producción para programar turnos de transporte de
-personal a partir de la semanal del cliente. Las reservas de unidad, conductor y horario se
-validan en PostgreSQL, hay historial con deshacer y rehacer, importación y exportación de Excel
-y zonas de cobertura en mapa. Tiene unas 980 pruebas de frontend, 765 de backend y ensayos de SQL
-con PGlite antes de cada migración.
+## Cómo trabajo
 
-**Nexo Ubicaciones** (privado, demo pública). Propuesta de registro móvil de domicilios:
-captura la ubicación con la API del navegador, muestra la precisión y exporta a CSV. El panel
-de administración sigue siendo una demostración.
-
-**RutaFix.** Proyecto del curso de Complejidad Algorítmica: agrupa puntos de intervención con
-K-Means y calcula la ruta de cada cuadrilla con fuerza bruta, backtracking, vecino más cercano y
-MST. Backend en FastAPI con capas de dominio, frontend en React con Leaflet.
-
-**Woodland Perú.** Plataforma comercial para una MIPYME hecha por el equipo WASD en una
-hackatón: web con catálogo y cotizaciones y panel para inventario y pedidos. Está en la fase de
-datos y seguridad (modelo, RLS, inventario transaccional). El catálogo público y los pagos
-todavía no están.
-
-## También
-
-| | |
-|---|---|
-| [FacturaSnap](https://facturasnap-web.vercel.app) | Calculadora de IGV y precio unitario para facturas con formato SUNAT. React y TypeScript. |
-| [WASD Connect](https://github.com/W-A-S-D-2-0/wasd-connect) | Mapa y reservas para pymes de Lima. Next.js, Drizzle y Postgres. |
-| [Qlic](https://github.com/wasd25/qlic-frontend) | Producto web del curso de Aplicaciones Web, equipo WASD. Vue y C#. |
-| [OsitoPolar](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend) | Aplicación web del curso, equipo Inteligencia Artesanal. Vue y C#. |
+- Pruebo antes de publicar: en Kapital son unas 980 pruebas de frontend y 765 de backend, y cada
+  migración de SQL se ensaya primero con PGlite y datos ficticios.
+- Despliego con GitHub Actions y Vercel.
+- Cuido accesibilidad y movimiento reducido en la interfaz.
 
 ## Herramientas
 
-Con las que trabajo a diario:
-
-<img src="https://skillicons.dev/icons?i=react,ts,js,vite,python,fastapi,postgres,supabase,vercel,githubactions,git&perline=11" alt="React, TypeScript, JavaScript, Vite, Python, FastAPI, PostgreSQL, Supabase, Vercel, GitHub Actions, Git" />
-
-Las que he usado en equipos y cursos:
-
-<img src="https://skillicons.dev/icons?i=nextjs,tailwind,cloudflare,vue,angular,java,spring,cs,docker,figma,cpp&perline=11" alt="Next.js, Tailwind, Cloudflare, Vue, Angular, Java, Spring, C#, Docker, Figma, C++" />
+<img src="https://skillicons.dev/icons?i=react,ts,js,vite,python,fastapi,postgres,supabase,vercel,githubactions,git,nextjs,tailwind,cloudflare,vue,java,spring,cs,docker,figma&perline=10" alt="React, TypeScript, JavaScript, Vite, Python, FastAPI, PostgreSQL, Supabase, Vercel, GitHub Actions, Git, Next.js, Tailwind, Cloudflare, Vue, Java, Spring, C#, Docker, Figma" />
 
 ## Contacto
 
