@@ -15,11 +15,13 @@ Me gusta que las reglas vivan en la base de datos y que cada cambio se pruebe an
 
 ### Proyectos
 
-<img src="assets/dot-kapital.svg" width="10" alt="" />&nbsp; **Kapital Routing** — programación de turnos y flota para transporte de personal <sub>· en producción · privado</sub><br/>
-<img src="assets/dot-woodland.svg" width="10" alt="" />&nbsp; **[Woodland Perú](https://woodland-peru-web-wasd-9268.vercel.app/)** — web comercial y panel para una empresa de teca <sub>· hackatón · equipo WASD</sub><br/>
-<img src="assets/dot-nexo.svg" width="10" alt="" />&nbsp; **[Nexo Ubicaciones](https://nexo-ubicaciones.vercel.app)** — registro móvil de domicilios con ubicación real <sub>· prototipo</sub><br/>
-<img src="assets/dot-rutafix.svg" width="10" alt="" />&nbsp; **[RutaFix](https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix)** — rutas de intervención vial con K-Means y TSP <sub>· curso · equipo</sub><br/>
-<img src="assets/dot-facturasnap.svg" width="10" alt="" />&nbsp; **[FacturaSnap](https://facturasnap-web.vercel.app)** — cálculo de IGV para facturas SUNAT
+<p>
+<img src="assets/fila-kapital.svg" width="100%" alt="Kapital Routing: turnos y flota para transporte de personal (en producción, privado)" />
+<a href="https://woodland-peru-web-wasd-9268.vercel.app/"><img src="assets/fila-woodland.svg" width="100%" alt="Woodland Perú: web comercial y panel para una empresa de teca (hackatón, equipo WASD)" /></a>
+<a href="https://nexo-ubicaciones.vercel.app"><img src="assets/fila-nexo.svg" width="100%" alt="Nexo Ubicaciones: registro de domicilios con ubicación real (prototipo)" /></a>
+<a href="https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix"><img src="assets/fila-rutafix.svg" width="100%" alt="RutaFix: rutas de intervención vial con K-Means y TSP (curso, equipo)" /></a>
+<a href="https://facturasnap-web.vercel.app"><img src="assets/fila-facturasnap.svg" width="100%" alt="FacturaSnap: cálculo de IGV para facturas SUNAT (en línea)" /></a>
+</p>
 
 ### Stack
 
