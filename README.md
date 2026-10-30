@@ -35,10 +35,10 @@ Me gusta que las reglas vivan en la base de datos y que cada cambio se pruebe an
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/anyelo-bill-alejos-jesus-930200309/">LinkedIn</a> &nbsp;·&nbsp;
-<a href="mailto:anyelobill31@gmail.com">anyelobill31@gmail.com</a> &nbsp;·&nbsp;
-<a href="https://github.com/W-A-S-D-2-0">WASD</a> &nbsp;·&nbsp;
-<a href="https://github.com/Inteligencia-Artesanal-Aplicaciones-Web">Inteligencia Artesanal</a>
+<a href="https://www.linkedin.com/in/anyelo-bill-alejos-jesus-930200309/"><img src="assets/contacto-linkedin.svg" height="40" alt="LinkedIn" /></a>&nbsp;
+<a href="mailto:anyelobill31@gmail.com"><img src="assets/contacto-correo.svg" height="40" alt="anyelobill31@gmail.com" /></a>&nbsp;
+<a href="https://github.com/W-A-S-D-2-0"><img src="assets/contacto-wasd.svg" height="40" alt="Equipo WASD" /></a>&nbsp;
+<a href="https://github.com/Inteligencia-Artesanal-Aplicaciones-Web"><img src="assets/contacto-artesanal.svg" height="40" alt="Equipo Inteligencia Artesanal" /></a>
 
 <img src="assets/footer-ola.svg" alt="" width="100%" />
 
