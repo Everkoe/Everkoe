@@ -10,8 +10,9 @@
 
 <br/>
 
-Estudio en la UPC y construyo software para operaciones: turnos, rutas, flota y ubicaciones.
-Me gusta que las reglas vivan en la base de datos y que cada cambio se pruebe antes de publicarse.
+Soy Anyelo, estudiante de la UPC. Hago aplicaciones web de punta a punta: la interfaz en React, la API en Python y los datos en PostgreSQL.
+
+Mi proyecto principal es **Kapital Routing**, la herramienta con la que una empresa de transporte de personal programa cada noche sus turnos, rutas y flota. Me gustan los problemas que se notan fuera de la pantalla: un turno que cruza la medianoche o una unidad que no puede estar en dos lugares a la vez.
 
 ### Proyectos
 
