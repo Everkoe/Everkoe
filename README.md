@@ -98,9 +98,9 @@ Plataforma comercial para una empresa de madera: web de catálogo y panel admini
 |---|---|
 | **Frontend** | <img src="https://skillicons.dev/icons?i=react,ts,js,vite,nextjs,tailwind,vue,angular,html,css" alt="Frontend" /> |
 | **Backend** | <img src="https://skillicons.dev/icons?i=python,fastapi,nodejs,cloudflare,java,spring,cs" alt="Backend" /> |
-| **Datos** | <img src="https://skillicons.dev/icons?i=postgres,supabase,mysql" alt="Datos" /> |
+| **Datos** | <img src="https://skillicons.dev/icons?i=postgres,supabase" alt="Datos" /> |
 | **Infra y CI** | <img src="https://skillicons.dev/icons?i=vercel,githubactions,git,docker" alt="Infra y CI" /> |
-| **Pruebas** | <img src="https://skillicons.dev/icons?i=vitest,jest" alt="Pruebas" /> |
+| **Pruebas** | <img src="https://skillicons.dev/icons?i=vitest" alt="Pruebas" /> |
 | **Diseño** | <img src="https://skillicons.dev/icons?i=figma" alt="Diseño" /> |
 
 ## Equipos y organizaciones
