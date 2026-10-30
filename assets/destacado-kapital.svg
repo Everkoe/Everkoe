@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="112" viewBox="0 0 900 112" role="img" aria-label="Kapital Routing: plataforma de turnos y flota para transporte de personal, en producción">
+  <style>
+    text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .bg{fill:#ECFDF3}.ac{fill:#16A34A}.st{fill:#166534}.n{fill:#1F2328}.d{fill:#59636E}.ring{stroke:#16A34A}
+    @media (prefers-color-scheme:dark){.bg{fill:#0F2A1C}.ac{fill:#4ADE80}.st{fill:#BBF7D0}.n{fill:#E6EDF3}.d{fill:#9198A1}.ring{stroke:#4ADE80}}
+  </style>
+  <rect width="900" height="112" rx="18" class="bg"/>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".7s" fill="freeze"/>
+    <circle cx="58" cy="56" r="26" class="ac"/>
+    <text x="58" y="64" font-size="22" font-weight="700" text-anchor="middle" fill="#FFFFFF">K</text>
+    <text x="102" y="50" font-size="22" font-weight="600" class="n">Kapital Routing</text>
+    <text x="102" y="76" font-size="14.5" class="d">Plataforma de turnos y flota para transporte de personal, usada a diario.</text>
+    <circle cx="772" cy="51" r="4" class="ac"/>
+    <circle cx="772" cy="51" r="4" fill="none" stroke-width="1.5" class="ring">
+      <animate attributeName="r" values="4;11" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values=".8;0" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="786" y="56" font-size="13" font-weight="500" class="st">en producción</text>
+  </g>
+</svg>

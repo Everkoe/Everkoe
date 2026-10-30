@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="100" viewBox="0 0 440 100" role="img" aria-label="FacturaSnap: Cálculo de IGV para facturas SUNAT (en línea)">
+  <style>
+    text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .bg{fill:#EEF4FF}.ac{fill:#2563EB}.st{fill:#1E40AF}.n{fill:#1F2328}.d{fill:#59636E}.ring{stroke:#2563EB}
+    @media (prefers-color-scheme:dark){.bg{fill:#111D36}.ac{fill:#60A5FA}.st{fill:#BFDBFE}.n{fill:#E6EDF3}.d{fill:#9198A1}.ring{stroke:#60A5FA}}
+  </style>
+  <rect width="440" height="100" rx="16" class="bg"/>
+  <g opacity="0"><animate attributeName="opacity" from="0" to="1" dur=".6s" begin="0.45s" fill="freeze"/>
+    <circle cx="42" cy="50" r="20" class="ac"/>
+    <text x="42" y="56.5" font-size="17" font-weight="700" text-anchor="middle" fill="#FFFFFF">F</text>
+    <text x="76" y="45" font-size="17" font-weight="600" class="n">FacturaSnap</text>
+    <text x="76" y="68" font-size="13.5" class="d">Cálculo de IGV para facturas SUNAT</text>
+    <text x="418" y="30" font-size="12" font-weight="500" text-anchor="end" class="st">en línea ↗</text>
+  </g>
+</svg>
