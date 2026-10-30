@@ -2,9 +2,11 @@
 
 <img src="assets/header.svg" alt="Anyelo Alejos, desarrollo full stack en Lima" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1500&color=2DA44E&center=true&vCenter=true&width=640&height=36&lines=Rutas%2C+turnos+y+flota+en+producci%C3%B3n;React+%2B+FastAPI+%2B+PostgreSQL;Pruebo+antes+de+publicar" alt="Rutas, turnos y flota en producción · React + FastAPI + PostgreSQL" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1500&color=22C55E&center=true&vCenter=true&width=640&height=36&lines=Rutas%2C+turnos+y+flota+en+producci%C3%B3n;React+%2B+FastAPI+%2B+PostgreSQL;Pruebo+antes+de+publicar" alt="Rutas, turnos y flota en producción · React + FastAPI + PostgreSQL" />
 
 </div>
+
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Sobre mí
 
@@ -13,6 +15,8 @@
 - Participo en equipos de la universidad y en hackatones: **WASD**, **Inteligencia Artesanal**, **RutaFix** e **IoBuild**.
 - Me gusta que las reglas del negocio vivan en la base de datos y que cada cambio se pruebe antes de publicarse.
 - Ahora mismo trabajo en la programación semanal, las reservas compartidas de flota y los mapas de cobertura.
+
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Proyectos destacados
 
@@ -30,7 +34,7 @@ Programación de turnos y flota para transporte de personal, construida desde ce
 - Historial con deshacer y rehacer, importación y exportación de Excel, zonas de cobertura en mapa.
 - Más de 980 pruebas de frontend y 765 de backend.
 
-<img src="https://skillicons.dev/icons?i=react,vite,python,fastapi,postgres,supabase,vercel,githubactions" alt="React, Vite, Python, FastAPI, PostgreSQL, Supabase, Vercel, GitHub Actions" />
+<img src="https://skillicons.dev/icons?theme=dark&i=react,vite,python,fastapi,postgres,supabase,vercel,githubactions" alt="React, Vite, Python, FastAPI, PostgreSQL, Supabase, Vercel, GitHub Actions" />
 
 </td>
 <td width="50%" valign="top">
@@ -45,7 +49,7 @@ Registro móvil de domicilios para equipos de campo.
 - Descarga las coordenadas en CSV compatible con Excel.
 - Panel de administración para PC (en demostración).
 
-<img src="https://skillicons.dev/icons?i=js,html,css,vercel" alt="JavaScript, HTML, CSS, Vercel" />
+<img src="https://skillicons.dev/icons?theme=dark&i=js,html,css,vercel" alt="JavaScript, HTML, CSS, Vercel" />
 
 </td>
 </tr>
@@ -62,7 +66,7 @@ Optimización de rutas de intervención vial.
 - Backend en capas (dominio e infraestructura) con FastAPI.
 - Mapa interactivo con Leaflet.
 
-<img src="https://skillicons.dev/icons?i=python,fastapi,react,ts,tailwind" alt="Python, FastAPI, React, TypeScript, Tailwind" />
+<img src="https://skillicons.dev/icons?theme=dark&i=python,fastapi,react,ts,tailwind" alt="Python, FastAPI, React, TypeScript, Tailwind" />
 
 </td>
 <td width="50%" valign="top">
@@ -77,7 +81,7 @@ Plataforma comercial para una empresa de madera: web de catálogo y panel admini
 - Pruebas con Vitest y PGlite.
 - Pendiente: catálogo público, cotizador y pagos.
 
-<img src="https://skillicons.dev/icons?i=react,ts,tailwind,cloudflare,supabase,vite" alt="React, TypeScript, Tailwind, Cloudflare, Supabase, Vite" />
+<img src="https://skillicons.dev/icons?theme=dark&i=react,ts,tailwind,cloudflare,supabase,vite" alt="React, TypeScript, Tailwind, Cloudflare, Supabase, Vite" />
 
 </td>
 </tr>
@@ -92,16 +96,20 @@ Plataforma comercial para una empresa de madera: web de catálogo y panel admini
 | [Qlic](https://github.com/wasd25/qlic-frontend) | Producto web del curso de Aplicaciones Web (equipo WASD). | Vue, C# |
 | [OsitoPolar](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend) | Aplicación web del curso (equipo Inteligencia Artesanal). | Vue, C# |
 
+<img src="assets/divider.svg" width="100%" alt="" />
+
 ## Stack
 
 | | |
 |---|---|
-| **Frontend** | <img src="https://skillicons.dev/icons?i=react,ts,js,vite,nextjs,tailwind,vue,angular,html,css" alt="Frontend" /> |
-| **Backend** | <img src="https://skillicons.dev/icons?i=python,fastapi,nodejs,cloudflare,java,spring,cs" alt="Backend" /> |
-| **Datos** | <img src="https://skillicons.dev/icons?i=postgres,supabase" alt="Datos" /> |
-| **Infra y CI** | <img src="https://skillicons.dev/icons?i=vercel,githubactions,git,docker" alt="Infra y CI" /> |
-| **Pruebas** | <img src="https://skillicons.dev/icons?i=vitest" alt="Pruebas" /> |
-| **Diseño** | <img src="https://skillicons.dev/icons?i=figma" alt="Diseño" /> |
+| **Frontend** | <img src="https://skillicons.dev/icons?theme=dark&i=react,ts,js,vite,nextjs,tailwind,vue,angular,html,css" alt="Frontend" /> |
+| **Backend** | <img src="https://skillicons.dev/icons?theme=dark&i=python,fastapi,nodejs,cloudflare,java,spring,cs" alt="Backend" /> |
+| **Datos** | <img src="https://skillicons.dev/icons?theme=dark&i=postgres,supabase" alt="Datos" /> |
+| **Infra y CI** | <img src="https://skillicons.dev/icons?theme=dark&i=vercel,githubactions,git,docker" alt="Infra y CI" /> |
+| **Pruebas** | <img src="https://skillicons.dev/icons?theme=dark&i=vitest" alt="Pruebas" /> |
+| **Diseño** | <img src="https://skillicons.dev/icons?theme=dark&i=figma" alt="Diseño" /> |
+
+<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Equipos y organizaciones
 
@@ -114,14 +122,23 @@ Plataforma comercial para una empresa de madera: web de catálogo y panel admini
 <a href="https://github.com/G3-FundamentosArqui-7944"><img src="https://github.com/G3-FundamentosArqui-7944.png?size=64" width="56" height="56" alt="Fundamentos de Arquitectura" title="Fundamentos de Arquitectura" /></a>
 </p>
 
+<img src="assets/divider.svg" width="100%" alt="" />
+
 ## Actividad
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Everkoe/Everkoe/main/profile-3d-contrib/profile-night-green.svg" />
+  <img alt="Gráfico 3D de contribuciones" src="https://raw.githubusercontent.com/Everkoe/Everkoe/main/profile-3d-contrib/profile-green.svg" width="100%" />
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Everkoe/Everkoe/output/github-snake-dark.svg" />
   <img alt="Contribuciones en forma de serpiente" src="https://raw.githubusercontent.com/Everkoe/Everkoe/output/github-snake.svg" width="100%" />
 </picture>
 
+<img src="assets/divider.svg" width="100%" alt="" />
+
 ## Contacto
 
-<a href="https://www.linkedin.com/in/anyelo-bill-alejos-jesus-930200309/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:anyelobill31@gmail.com"><img src="https://img.shields.io/badge/Email-1F2328?style=for-the-badge&logo=gmail&logoColor=white" alt="Correo" /></a>
+<a href="https://www.linkedin.com/in/anyelo-bill-alejos-jesus-930200309/"><img src="https://img.shields.io/badge/LinkedIn-052E16?style=for-the-badge&logo=linkedin&logoColor=4ADE80" alt="LinkedIn" /></a>
+<a href="mailto:anyelobill31@gmail.com"><img src="https://img.shields.io/badge/Email-0A0F0D?style=for-the-badge&logo=gmail&logoColor=4ADE80" alt="Correo" /></a>

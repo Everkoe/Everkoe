@@ -1,48 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-label="Anyelo Alejos, desarrollador full stack en Lima">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-label="Anyelo Alejos, desarrollo full stack en Lima">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050807"/>
+      <stop offset="0.65" stop-color="#08130D"/>
+      <stop offset="1" stop-color="#0B2417"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F0FDF4"/>
+      <stop offset="1" stop-color="#4ADE80"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#22C55E" stroke-opacity=".07"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
   <style>
     text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-    .bg{fill:#F6F8FA;stroke:#D0D7DE}
-    .ink{fill:#1F2328}.mu{fill:#656D76}
-    .edge{stroke:#8C959F;stroke-opacity:.55}
-    .node{fill:#F6F8FA;stroke:#1F2328}
-    .k{fill:#1A7F37}.n{fill:#0969DA}.r{fill:#BC4C00}.w{fill:#9A6700}
-    .dot{fill:#1F2328}
-    @media (prefers-color-scheme:dark){
-      .bg{fill:#0D1117;stroke:#30363D}
-      .ink{fill:#E6EDF3}.mu{fill:#8B949E}
-      .edge{stroke:#6E7681}
-      .node{fill:#0D1117;stroke:#E6EDF3}
-      .k{fill:#3FB950}.n{fill:#58A6FF}.r{fill:#F0883E}.w{fill:#D29922}
-      .dot{fill:#E6EDF3}
-    }
   </style>
-  <rect x=".5" y=".5" width="899" height="209" rx="14" class="bg"/>
 
-  <text x="44" y="82" font-size="40" font-weight="700" class="ink">Anyelo Alejos</text>
-  <text x="46" y="114" font-size="17" class="mu">Desarrollo full stack · Lima, Perú</text>
-  <text x="46" y="148" font-size="14" class="mu">Software para operaciones reales: rutas, turnos, flota y datos.</text>
-  <text x="46" y="170" font-size="12" class="mu mono">react · python · postgres</text>
+  <rect x=".5" y=".5" width="899" height="229" rx="16" fill="url(#bg)" stroke="#1B3A29"/>
+  <rect x=".5" y=".5" width="899" height="229" rx="16" fill="url(#grid)"/>
+
+  <!-- barra tipo terminal -->
+  <g>
+    <circle cx="28" cy="26" r="5" fill="#16A34A"/><circle cx="46" cy="26" r="5" fill="#1B3A29"/><circle cx="64" cy="26" r="5" fill="#1B3A29"/>
+    <text x="84" y="30" font-size="12" fill="#5E8A71" class="mono">~/everkoe</text>
+  </g>
+
+  <text x="44" y="100" font-size="44" font-weight="700" fill="url(#name)">Anyelo Alejos</text>
+  <text x="46" y="132" font-size="17" fill="#86EFAC">Desarrollo full stack · Lima, Perú</text>
+  <text x="46" y="162" font-size="13.5" fill="#7FA48E">Software para operaciones reales: rutas, turnos, flota y datos.</text>
+  <text x="46" y="188" font-size="13" fill="#22C55E" class="mono">$ react · python · postgres<tspan fill="#22C55E"><animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>▍</tspan></text>
 
   <!-- recorrido entre proyectos -->
-  <path id="tour" d="M560 62 L712 36 L822 112 L650 160 Z" fill="none" class="edge" stroke-width="1.6" stroke-dasharray="4 6">
+  <path id="tour" d="M560 84 L712 54 L822 130 L650 180 Z" fill="none" stroke="#22C55E" stroke-opacity=".45" stroke-width="1.6" stroke-dasharray="4 6">
     <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="4s" repeatCount="indefinite"/>
   </path>
-
-  <g stroke-width="1.6">
-    <circle cx="560" cy="62" r="7" class="node"/><circle cx="560" cy="62" r="3" class="k" stroke="none"/>
-    <circle cx="712" cy="36" r="7" class="node"/><circle cx="712" cy="36" r="3" class="n" stroke="none"/>
-    <circle cx="822" cy="112" r="7" class="node"/><circle cx="822" cy="112" r="3" class="r" stroke="none"/>
-    <circle cx="650" cy="160" r="7" class="node"/><circle cx="650" cy="160" r="3" class="w" stroke="none"/>
+  <g filter="url(#glow)">
+    <circle cx="560" cy="84" r="6" fill="#22C55E"/>
+    <circle cx="712" cy="54" r="6" fill="#4ADE80"/>
+    <circle cx="822" cy="130" r="6" fill="#86EFAC"/>
+    <circle cx="650" cy="180" r="6" fill="#16A34A"/>
   </g>
-  <g font-size="12" class="mono">
-    <text x="536" y="88" class="mu">kapital</text>
-    <text x="690" y="22" class="mu">nexo</text>
-    <text x="796" y="138" class="mu">rutafix</text>
-    <text x="620" y="186" class="mu">woodland</text>
+  <g font-size="12" fill="#7FA48E" class="mono">
+    <text x="530" y="108">kapital</text>
+    <text x="692" y="42">nexo</text>
+    <text x="792" y="154">rutafix</text>
+    <text x="618" y="206">woodland</text>
   </g>
-
-  <circle r="4.5" class="dot">
-    <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#tour"/></animateMotion>
+  <circle r="4.5" fill="#F0FDF4" filter="url(#glow)">
+    <animateMotion dur="9s" repeatCount="indefinite"><mpath href="#tour"/></animateMotion>
   </circle>
 </svg>
