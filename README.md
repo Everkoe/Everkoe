@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/header-verde.svg" alt="Anyelo Alejos, desarrollo full stack en Lima" width="100%" />
+<img src="assets/header-ola.svg" alt="Anyelo Alejos, desarrollo full stack en Lima" width="100%" />
+
+<img src="https://komarev.com/ghpvc/?username=Everkoe&label=Profile%20views&color=22C55E&style=flat-square" alt="Visitas al perfil" />
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&pause=1500&color=22C55E&center=true&vCenter=true&width=640&height=36&lines=Rutas%2C+turnos+y+flota+en+producci%C3%B3n;React+%2B+FastAPI+%2B+PostgreSQL;Pruebo+antes+de+publicar" alt="Rutas, turnos y flota en producción · React + FastAPI + PostgreSQL" />
 

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-label="Anyelo Alejos, Full Stack Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B1120"/>
+      <stop offset=".45" stop-color="#0F3B2A"/>
+      <stop offset="1" stop-color="#1F8A4C"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070B14"/>
+      <stop offset="1" stop-color="#14532D"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  </style>
+
+  <rect width="900" height="210" fill="url(#bg)"/>
+
+  <!-- olas -->
+  <path fill="#16A34A" fill-opacity=".35" d="M0 138 C150 108 300 172 450 138 S750 104 900 142 L900 210 L0 210 Z">
+    <animate attributeName="d" dur="9s" repeatCount="indefinite"
+      values="M0 138 C150 108 300 172 450 138 S750 104 900 142 L900 210 L0 210 Z;
+              M0 146 C150 170 300 110 450 146 S750 172 900 134 L900 210 L0 210 Z;
+              M0 138 C150 108 300 172 450 138 S750 104 900 142 L900 210 L0 210 Z"/>
+  </path>
+  <path fill="url(#wave)" fill-opacity=".92" d="M0 156 C170 130 320 186 480 156 S760 128 900 160 L900 210 L0 210 Z">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="M0 156 C170 130 320 186 480 156 S760 128 900 160 L900 210 L0 210 Z;
+              M0 162 C170 184 320 130 480 162 S760 186 900 152 L900 210 L0 210 Z;
+              M0 156 C170 130 320 186 480 156 S760 128 900 160 L900 210 L0 210 Z"/>
+  </path>
+
+  <g text-anchor="middle" fill="#FFFFFF" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" fill="freeze"/>
+    <text x="450" y="84" font-size="48" font-weight="700">Anyelo Alejos</text>
+    <text x="450" y="118" font-size="20" font-weight="600" fill="#DCFCE7">Full Stack Developer · Lima, Perú</text>
+  </g>
+
+  <text x="450" y="188" text-anchor="middle" font-size="13" fill="#86EFAC" class="mono" letter-spacing="1">kapital  ·  nexo  ·  rutafix  ·  woodland</text>
+</svg>
