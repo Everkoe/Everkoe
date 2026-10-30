@@ -15,7 +15,6 @@
 - 🎓 Estudiante en la **UPC**, desde Lima
 - 💻 Desarrollo web full stack con **React**, **Python** y **PostgreSQL**
 - 🧩 Me gustan los problemas reales: horarios, rutas y datos que tienen que cuadrar
-- 🧪 Pruebo cada cambio antes de publicarlo
 - 🤝 Disfruto trabajar en equipo, en hackatones y en clase
 
 ### Proyectos
