@@ -1,74 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="250" viewBox="0 0 900 250" role="img" aria-label="Anyelo Alejos, Full Stack Developer">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0F172A"/>
-      <stop offset="0.6" stop-color="#0B3B24"/>
-      <stop offset="1" stop-color="#166534"/>
-    </linearGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#86EFAC"/>
-    </linearGradient>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M30 0H0V30" fill="none" stroke="#22C55E" stroke-opacity="0.08"/>
-    </pattern>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="210" viewBox="0 0 900 210" role="img" aria-label="Anyelo Alejos, desarrollador full stack en Lima">
+  <style>
+    text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .bg{fill:#F6F8FA;stroke:#D0D7DE}
+    .ink{fill:#1F2328}.mu{fill:#656D76}
+    .edge{stroke:#8C959F;stroke-opacity:.55}
+    .node{fill:#F6F8FA;stroke:#1F2328}
+    .k{fill:#1A7F37}.n{fill:#0969DA}.r{fill:#BC4C00}.w{fill:#9A6700}
+    .dot{fill:#1F2328}
+    @media (prefers-color-scheme:dark){
+      .bg{fill:#0D1117;stroke:#30363D}
+      .ink{fill:#E6EDF3}.mu{fill:#8B949E}
+      .edge{stroke:#6E7681}
+      .node{fill:#0D1117;stroke:#E6EDF3}
+      .k{fill:#3FB950}.n{fill:#58A6FF}.r{fill:#F0883E}.w{fill:#D29922}
+      .dot{fill:#E6EDF3}
+    }
+  </style>
+  <rect x=".5" y=".5" width="899" height="209" rx="14" class="bg"/>
 
-  <rect width="900" height="250" rx="18" fill="url(#bg)"/>
-  <rect width="900" height="250" rx="18" fill="url(#grid)"/>
+  <text x="44" y="82" font-size="40" font-weight="700" class="ink">Anyelo Alejos</text>
+  <text x="46" y="114" font-size="17" class="mu">Desarrollo full stack · Lima, Perú</text>
+  <text x="46" y="148" font-size="14" class="mu">Software para operaciones reales: rutas, turnos, flota y datos.</text>
+  <text x="46" y="170" font-size="12" class="mu mono">react · python · postgres</text>
 
-  <!-- ruta animada -->
-  <path id="route" d="M30 228 C 170 175, 290 245, 450 200 S 740 150, 872 214"
-        fill="none" stroke="#22C55E" stroke-opacity="0.55" stroke-width="2.5" stroke-dasharray="7 9" stroke-linecap="round">
-    <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.6s" repeatCount="indefinite"/>
+  <!-- recorrido entre proyectos -->
+  <path id="tour" d="M560 62 L712 36 L822 112 L650 160 Z" fill="none" class="edge" stroke-width="1.6" stroke-dasharray="4 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="4s" repeatCount="indefinite"/>
   </path>
 
-  <!-- paradas -->
-  <g fill="#22C55E" filter="url(#glow)">
-    <circle cx="30" cy="228" r="6"><animate attributeName="r" values="5;8;5" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="450" cy="200" r="6"><animate attributeName="r" values="5;8;5" dur="2.4s" begin="0.8s" repeatCount="indefinite"/></circle>
-    <circle cx="872" cy="214" r="6"><animate attributeName="r" values="5;8;5" dur="2.4s" begin="1.6s" repeatCount="indefinite"/></circle>
+  <g stroke-width="1.6">
+    <circle cx="560" cy="62" r="7" class="node"/><circle cx="560" cy="62" r="3" class="k" stroke="none"/>
+    <circle cx="712" cy="36" r="7" class="node"/><circle cx="712" cy="36" r="3" class="n" stroke="none"/>
+    <circle cx="822" cy="112" r="7" class="node"/><circle cx="822" cy="112" r="3" class="r" stroke="none"/>
+    <circle cx="650" cy="160" r="7" class="node"/><circle cx="650" cy="160" r="3" class="w" stroke="none"/>
+  </g>
+  <g font-size="12" class="mono">
+    <text x="536" y="88" class="mu">kapital</text>
+    <text x="690" y="22" class="mu">nexo</text>
+    <text x="796" y="138" class="mu">rutafix</text>
+    <text x="620" y="186" class="mu">woodland</text>
   </g>
 
-  <!-- vehículo -->
-  <g filter="url(#glow)">
-    <circle r="7" fill="#FFFFFF">
-      <animateMotion dur="7s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#route"/></animateMotion>
-    </circle>
-    <circle r="12" fill="none" stroke="#86EFAC" stroke-opacity="0.7">
-      <animateMotion dur="7s" repeatCount="indefinite"><mpath xlink:href="#route"/></animateMotion>
-      <animate attributeName="r" values="8;16;8" dur="1.4s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="1.4s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- puntos flotantes -->
-  <g fill="#86EFAC">
-    <circle cx="760" cy="48" r="2"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="90" r="1.6"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
-    <circle cx="690" cy="86" r="1.8"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="3.5s" begin="0.5s" repeatCount="indefinite"/></circle>
-    <circle cx="850" cy="40" r="1.4"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.8s" begin="1.5s" repeatCount="indefinite"/></circle>
-  </g>
-
-  <!-- texto -->
-  <g font-family="'Segoe UI', Helvetica, Arial, sans-serif">
-    <text x="48" y="92" font-size="50" font-weight="800" fill="url(#name)" opacity="0">
-      Anyelo Alejos
-      <animate attributeName="opacity" from="0" to="1" dur="0.9s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" from="-24 0" to="0 0" dur="0.9s" fill="freeze"/>
-    </text>
-    <text x="50" y="128" font-size="22" font-weight="600" fill="#86EFAC" opacity="0">
-      Full Stack Developer
-      <animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="0.4s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" from="-24 0" to="0 0" dur="0.9s" begin="0.4s" fill="freeze"/>
-    </text>
-    <text x="50" y="156" font-size="15" fill="#CBD5E1" opacity="0" letter-spacing="1">
-      React  ·  Python  ·  PostgreSQL  ·  Lima, Perú
-      <animate attributeName="opacity" from="0" to="1" dur="0.9s" begin="0.8s" fill="freeze"/>
-    </text>
-  </g>
+  <circle r="4.5" class="dot">
+    <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#tour"/></animateMotion>
+  </circle>
 </svg>

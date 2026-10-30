@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="210" viewBox="0 0 440 210" role="img" aria-label="Nexo Ubicaciones">
+  <style>
+    text{font-family:-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .card{fill:#F6F8FA;stroke:#D0D7DE}.ink{fill:#1F2328}.mu{fill:#656D76}.ln{stroke:#D0D7DE;fill:none}
+    .ac{fill:#0969DA}.acs{stroke:#0969DA;fill:none}.acbg{fill:#0969DA;fill-opacity:.12}.ph{fill:#FFFFFF;stroke:#8C959F}
+    @media (prefers-color-scheme:dark){
+      .card{fill:#161B22;stroke:#30363D}.ink{fill:#E6EDF3}.mu{fill:#8B949E}.ln{stroke:#30363D}
+      .ac{fill:#58A6FF}.acs{stroke:#58A6FF}.acbg{fill:#58A6FF;fill-opacity:.15}.ph{fill:#0D1117;stroke:#6E7681}
+    }
+  </style>
+  <rect x=".5" y=".5" width="439" height="209" rx="12" class="card"/>
+  <text x="24" y="38" font-size="11" class="ac mono">PROTOTIPO · PRIVADO</text>
+  <text x="24" y="68" font-size="24" font-weight="700" class="ink">Nexo Ubicaciones</text>
+  <g font-size="13" class="mu">
+    <text x="24" y="98">Registro móvil de domicilios con</text>
+    <text x="24" y="117">captura real de ubicación y un</text>
+    <text x="24" y="136">panel de administración.</text>
+  </g>
+  <text x="24" y="184" font-size="11" class="mu mono">JavaScript · Geolocation API</text>
+
+  <rect x="315" y="22" width="76" height="166" rx="14" class="ph" stroke-width="1.5"/>
+  <g class="ln" stroke-width="1">
+    <path d="M327 62H379M327 92H379M327 122H379M345 44V150M365 44V150"/>
+  </g>
+  <circle cx="353" cy="92" r="6" class="acs" stroke-width="2">
+    <animate attributeName="r" values="6;30" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".8;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="353" cy="92" r="6" class="ac"/>
+  <circle cx="353" cy="92" r="2.2" fill="#fff"/>
+  <rect x="329" y="160" width="48" height="16" rx="8" class="acbg"/>
+  <text x="353" y="172" font-size="9" text-anchor="middle" class="ac mono">±12 m</text>
+</svg>

@@ -1,125 +1,64 @@
-<div align="center">
+<img src="assets/header.svg" alt="Anyelo Alejos, desarrollo full stack en Lima" width="100%" />
 
-<img src="assets/header.svg" alt="Anyelo Alejos, Full Stack Developer" width="100%" />
+Hago software para operaciones: programación de turnos, rutas, flota y registro de ubicaciones.
+Me interesa que las reglas del negocio vivan en un solo lugar, que se puedan probar y que la
+herramienta la use gente de verdad todos los días.
 
-<a href="https://github.com/Everkoe">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=22C55E&center=true&vCenter=true&width=720&height=40&lines=Convierto+hojas+de+Excel+en+sistemas+que+funcionan;React+%2B+FastAPI+%2B+PostgreSQL+en+producci%C3%B3n;Reglas+de+negocio+validadas+en+la+base+de+datos;Pruebo+antes+de+publicar%3A+CI%2C+PGlite+y+datos+ficticios" alt="Frases animadas" />
-</a>
+Trabajo solo en algunos proyectos y en equipo en otros (UPC y hackatones).
+Abajo está lo más reciente.
 
-</div>
+## Proyectos
 
-<br/>
-
-## 🚀 Proyecto principal: Kapital Routing
-
-Plataforma web de programación y ruteo de transporte de personal, **en producción y en uso diario** por programadores, administradores y conductores. *(Repositorio privado.)*
-
-<div align="center">
-<img src="assets/kapital-flow.svg" alt="Flujo de un turno en Kapital Routing" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/stats.svg" alt="Cifras del proyecto" width="100%" />
-</div>
-
-<br/>
-
-<table width="100%">
+<table>
 <tr>
-<td width="50%" valign="top">
-
-**🗓️ Programación por turnos**
-Crea el turno desde la semanal del cliente, reutiliza la unidad de cada servicio repetido y deja en pendientes lo que no puede asignar, con el motivo.
-
-**🔒 Reservas compartidas de flota**
-Un cruce de unidad, conductor, hora y sentido se rechaza también en la base de datos, con bloqueo transaccional.
-
-**↩️ Edición con historial**
-Deshacer y rehacer, versiones, guardado idempotente y borradores antes de aplicar.
-
-</td>
-<td width="50%" valign="top">
-
-**📊 Excel de varios clientes**
-Importa y exporta formatos distintos, con detección automática de sede.
-
-**🗺️ Zonas de cobertura en mapa**
-Polígonos dibujados por el usuario con Google Maps JavaScript.
-
-**🛡️ Roles y accesos**
-Sesión por cookie HttpOnly y permisos derivados en el servidor, con cuentas por operación.
-
-</td>
+<td width="50%"><img src="assets/card-kapital.svg" alt="Kapital Routing: programación de turnos y flota" width="100%" /></td>
+<td width="50%"><a href="https://nexo-ubicaciones.vercel.app"><img src="assets/card-nexo.svg" alt="Nexo Ubicaciones: registro móvil de domicilios" width="100%" /></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/ComplejidadAlgoritmica-Rutafix/FinalProyect-Rutafix"><img src="assets/card-rutafix.svg" alt="RutaFix: rutas de intervención vial" width="100%" /></a></td>
+<td width="50%"><a href="https://github.com/W-A-S-D-2-0/woodlandsperu-main"><img src="assets/card-woodland.svg" alt="Woodland Perú: plataforma comercial" width="100%" /></a></td>
 </tr>
 </table>
 
-<br/>
+**Kapital Routing** (privado). Plataforma en producción para programar turnos de transporte de
+personal a partir de la semanal del cliente. Las reservas de unidad, conductor y horario se
+validan en PostgreSQL, hay historial con deshacer y rehacer, importación y exportación de Excel
+y zonas de cobertura en mapa. Tiene unas 980 pruebas de frontend, 765 de backend y ensayos de SQL
+con PGlite antes de cada migración.
 
-## 🧩 Stack
+**Nexo Ubicaciones** (privado, demo pública). Propuesta de registro móvil de domicilios:
+captura la ubicación con la API del navegador, muestra la precisión y exporta a CSV. El panel
+de administración sigue siendo una demostración.
 
-<div align="center">
+**RutaFix.** Proyecto del curso de Complejidad Algorítmica: agrupa puntos de intervención con
+K-Means y calcula la ruta de cada cuadrilla con fuerza bruta, backtracking, vecino más cercano y
+MST. Backend en FastAPI con capas de dominio, frontend en React con Leaflet.
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+**Woodland Perú.** Plataforma comercial para una MIPYME hecha por el equipo WASD en una
+hackatón: web con catálogo y cotizaciones y panel para inventario y pedidos. Está en la fase de
+datos y seguridad (modelo, RLS, inventario transaccional). El catálogo público y los pagos
+todavía no están.
 
-</div>
+## También
 
-<br/>
+| | |
+|---|---|
+| [FacturaSnap](https://facturasnap-web.vercel.app) | Calculadora de IGV y precio unitario para facturas con formato SUNAT. React y TypeScript. |
+| [WASD Connect](https://github.com/W-A-S-D-2-0/wasd-connect) | Mapa y reservas para pymes de Lima. Next.js, Drizzle y Postgres. |
+| [Qlic](https://github.com/wasd25/qlic-frontend) | Producto web del curso de Aplicaciones Web, equipo WASD. Vue y C#. |
+| [OsitoPolar](https://github.com/Inteligencia-Artesanal-Aplicaciones-Web/OsitoPolar-Frontend) | Aplicación web del curso, equipo Inteligencia Artesanal. Vue y C#. |
 
-## 🛠️ Otros proyectos
+## Herramientas
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
+Con las que trabajo a diario:
 
-### [🧾 FacturaSnap](https://github.com/Everkoe/facturasnap-web)
-Calculadora de IGV y precio unitario para facturas con formato SUNAT.
+<img src="https://skillicons.dev/icons?i=react,ts,js,vite,python,fastapi,postgres,supabase,vercel,githubactions,git&perline=11" alt="React, TypeScript, JavaScript, Vite, Python, FastAPI, PostgreSQL, Supabase, Vercel, GitHub Actions, Git" />
 
-`React` `TypeScript`
+Las que he usado en equipos y cursos:
 
-</td>
-<td width="50%" valign="top">
+<img src="https://skillicons.dev/icons?i=nextjs,tailwind,cloudflare,vue,angular,java,spring,cs,docker,figma,cpp&perline=11" alt="Next.js, Tailwind, Cloudflare, Vue, Angular, Java, Spring, C#, Docker, Figma, C++" />
 
-### 📍 Nexo Ubicaciones *(privado)*
-Prototipo de registro móvil de domicilios y administración de ubicaciones.
+## Contacto
 
-`JavaScript`
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-## 🎯 Lo que me interesa
-
-- 🧠 Modelar reglas de negocio reales (turnos, disponibilidad, conflictos) y validarlas en la base de datos, no solo en la interfaz.
-- ♿ Interfaces claras, accesibles y con movimiento reducido.
-- 🧪 Probar antes de publicar: datos ficticios, SQL efímero y CI.
-
-<br/>
-
-## 📬 Contacto
-
-<div align="center">
-
-<a href="https://www.linkedin.com/in/anyelo-bill-alejos-jesus-930200309/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:anyelobill31@gmail.com"><img src="https://img.shields.io/badge/Email-22C55E?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22C55E,100:0F172A&height=100&section=footer" width="100%" />
-
-</div>
+[LinkedIn](https://www.linkedin.com/in/anyelo-bill-alejos-jesus-930200309/) ·
+[anyelobill31@gmail.com](mailto:anyelobill31@gmail.com)
